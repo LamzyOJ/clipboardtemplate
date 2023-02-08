@@ -122,6 +122,8 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .section3 {
@@ -130,7 +132,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    height: 127vh;
+    height: fit-content;
 }
 
 .section4 {
@@ -144,12 +146,12 @@ h1 {
 
 .blacklistsgeneral {
     display: flex;
-    gap: 2rem;
+    gap: 36px;
 }
 
 .blacklists {
     width: 33.3%;
-    height: 230px;
+    /* height: 230px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,7 +165,7 @@ h1 {
 
 .gray {
     color: hsl(201, 11%, 66%);
-    width: 340px;
+    width: 299px;
     line-height: 29px;
     font-size: 18px;
     text-align: center;
@@ -252,16 +254,17 @@ footer {
     
 } */
 
-@media screen and (max-width: 949.09px) {
+@media screen and (max-width: 950px) {
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        gap: 60px;
     }
 
     .section1 {
-        height: 65vh;
+        height: 118vh;
         width: 100%;
     }
 
@@ -269,17 +272,13 @@ footer {
         text-align: center;
     }
 
-    .clipboard {
-        width: 100%;
-    }
-
     .section2 {
-        height: 105vh;
+        height: fit-content;
         width: 100%;
     }
 
     .section3 {
-        height: 90vh;
+        height: 189vh;
     }
 
     .details {
@@ -313,31 +312,31 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 7rem;
+    /* justify-content: space-evenly; */
+    gap: 4rem;
    }
 
    .supercharge {
-    height: 450vh;
+    height: fit-content;
    }
 
    .section4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 94vh;
+    /* justify-content: space-evenly; */
+    height: 183vh;
    }
 
    .section6 {
-    height: 46vh;
+    height: 96vh;
    }
 
    .logos {
     display: flex;
     flex-direction: column;
-    gap: 80px;
-    height: 65vh;
+    /* gap: 80px; */
+    height: 101vh;
    }
 
    footer {
@@ -385,60 +384,68 @@ footer {
    }
 }
 
-@media screen and (max-width: 390px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .section2 {
-        height: 140vh;
+@media screen and (max-width: 780px) {
+    .clipboard {
+        width: 32rem;
     }
 
     .section3 {
-        height: 93vh;
+        height: 128vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        width: 30rem;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    h1 {
+        width: 26rem;
+    }
+
+    .clipboard {
+        width: 21rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        width: 19rem;
+    }
+
+    .section1 {
+        height: 127vh;
+    }
+
+    .clipboard {
+        width: 19rem;
     }
 
     .section4 {
-        height: 181vh;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        width: 16rem;
+        font-size: 35px;
+    }
+
+    .clipboard {
+        width: 11rem;
     }
 
     .logos {
-        height: 64vh;
-    }
-
-    .section6 {
-        height: 73vh;
+        height: fit-content;
     }
 }
 
 @media screen and (max-width: 280px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .section1 {
-        height: 103vh;
-    }
-
-    .section2 {
-        height: 220vh;
-    }
-
-    .section4 {
-        height: 253vh;
-    }
-
-    .logos {
-        height: 100vh;
-    }
-
-    .section6 {
-        height: 102vh;
+    h1 {
+        width: 13rem;
     }
 }
